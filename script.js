@@ -20,7 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    let tickingHeader = false;
+    window.addEventListener('scroll', () => {
+        if (!tickingHeader) {
+            window.requestAnimationFrame(() => {
+                handleScroll();
+                tickingHeader = false;
+            });
+            tickingHeader = true;
+        }
+    }, { passive: true });
 
     // ---- MOBILE NAV TOGGLE ----
     const navToggle = document.getElementById('navToggle');
@@ -95,7 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    window.addEventListener('scroll', highlightNav, { passive: true });
+    let tickingNav = false;
+    window.addEventListener('scroll', () => {
+        if (!tickingNav) {
+            window.requestAnimationFrame(() => {
+                highlightNav();
+                tickingNav = false;
+            });
+            tickingNav = true;
+        }
+    }, { passive: true });
 
     // ---- COUNTER ANIMATION ----
     const statNumbers = document.querySelectorAll('.stat__number[data-target]');
