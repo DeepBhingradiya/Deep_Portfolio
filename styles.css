@@ -724,8 +724,6 @@ img {
 }
 
 /* Hero Image */
-/* (Image is now the full background — no card needed) */
-/* Scroll Indicator */
 .hero__scroll-indicator {
     position: absolute;
     bottom: 40px;
@@ -845,9 +843,7 @@ img {
 .about__grid {
     display: grid;
     grid-template-columns: 0.82fr 1.18fr;
-    /* Gives the timeline cards more room */
     gap: 48px;
-    /* Slightly tightens the gap for better coherence */
     align-items: start;
 }
 
@@ -1034,10 +1030,8 @@ img {
 .experience__logo {
     position: absolute;
     right: 24px;
-    /* spacing from right border */
     top: 50%;
     transform: translateY(-50%);
-    /* vertical center */
 }
 
 .experience__logo img {
@@ -1159,11 +1153,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 230px;
-    /* increased */
     height: 95px;
-    /* increased */
     padding: 0;
     margin: 0 48px;
 
@@ -1237,7 +1228,6 @@ img {
 .project__card-inner {
     display: grid;
     grid-template-columns: 1fr;
-    /* single column for full-width */
     background: var(--bg-card);
     border: 1px solid var(--border-primary);
     border-radius: var(--radius-xl);

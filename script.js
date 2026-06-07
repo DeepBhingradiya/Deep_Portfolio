@@ -1,5 +1,5 @@
 /* ============================================================
-   DEEP'S PORTFOLIO — Interactive JavaScript
+   DEEP'S PORTFOLIO
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
