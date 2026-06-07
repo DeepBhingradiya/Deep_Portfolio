@@ -323,5 +323,5 @@ document.addEventListener('DOMContentLoaded', () => {
         // Already set statically — future enhancement could add dynamic typing
     }
 
-    console.log('%c 🚀 Deep\'s Portfolio loaded successfully!', 'color: #5B9DFF; font-size: 14px; font-weight: bold;');
+    console.log('%c Deep\'s Portfolio loaded successfully!', 'color: #5B9DFF; font-size: 14px; font-weight: bold;');
 });
